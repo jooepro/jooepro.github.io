@@ -1460,63 +1460,20 @@ svg {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 0.7rem;
+  gap: 1.5rem;
 }
 
 .social-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
-  min-height: 2.7rem;
-  padding: 0.45rem 0.85rem 0.45rem 0.5rem;
-  border: 1px solid var(--line);
-  border-radius: 100vw;
   color: var(--muted);
   font-family: var(--font-mono);
   font-size: 0.66rem;
   text-transform: uppercase;
-  transition: color 220ms ease, background 220ms ease, border-color 220ms ease, transform 300ms var(--ease);
-}
-
-.social-links svg {
-  width: 1.75rem;
-  height: 1.75rem;
-  padding: 0.38rem;
-  border-radius: 50%;
-  background: var(--surface);
-  fill: currentColor;
-  stroke: currentColor;
-  stroke-width: 1.5;
-  transition: background 220ms ease, color 220ms ease, transform 300ms var(--ease);
-}
-
-.social-links svg rect,
-.social-links svg circle {
-  fill: none;
-}
-
-.social-links svg path {
-  stroke: none;
-}
-
-.social-links svg .social-icon-dot {
-  fill: currentColor;
-  stroke: none;
+  transition: color 180ms ease;
 }
 
 .social-links a:hover,
 .social-links a:focus-visible {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: var(--accent-ink);
-  transform: translateY(-3px);
-}
-
-.social-links a:hover svg,
-.social-links a:focus-visible svg {
-  background: var(--accent-ink);
-  color: var(--accent);
-  transform: rotate(-8deg);
+  color: var(--text);
 }
 
 .site-footer {
